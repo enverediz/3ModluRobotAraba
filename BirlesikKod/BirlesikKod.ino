@@ -60,6 +60,10 @@ void setup()
   //pinMode(buzzerPin, OUTPUT); //buzzer pini A2
   pinMode(lazerPin,OUTPUT); // lazer nokta pini, pin3
 
+  //Blueooth Pinleri
+  pinMode(Rx,INPUT);
+  pinMode(Tx, OUTPUT);
+
   // Motor pinleri
   pinMode(motorA1, OUTPUT);
   pinMode(motorA2, OUTPUT);
