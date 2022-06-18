@@ -35,8 +35,8 @@ int kaydirmaliAnahtar2 = 7; //BU MOD DA EĞER YUKARIDAKİ MOD BLUETOOTH İSE KUM
                             // HER İKİ ANAHTAR İÇİN DE SOL BACAK VCC'YE YANİ +'YA, SAĞ BACAK GND'YE YANİ -'YE BAĞLI OLACAK. TERSİ DE OLABİLİR SADECE KODU BUNA GÖRE YAZMALIYIZ.
 
 //ses sensörü pinleri
-#define USTrigger 6
-#define USEcho 7
+#define USTrigger 13
+#define USEcho 12
 #define maksimumUzaklik 100
 
 NewPing sonar(USTrigger, USEcho, maksimumUzaklik);//ultrasonik sensör tanımlama
@@ -58,7 +58,7 @@ void setup()
   pinMode(LED1, OUTPUT); //led1 pini A0
   pinMode(LED2, OUTPUT); //led2 pini A1
   //pinMode(buzzerPin, OUTPUT); //buzzer pini A2
-  pinMode(lazerPin,OUTPUT); // lazer nokta pini, pin3
+  pinMode(lazerPin,OUTPUT); // lazer nokta pini, pin 8
 
   //Blueooth Pinleri
   pinMode(Rx,INPUT);
